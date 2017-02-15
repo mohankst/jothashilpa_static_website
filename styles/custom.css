@@ -326,9 +326,9 @@ a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
 .btn-primary, .btn-primary:hover, a.btn-primary, a.btn-primary:hover {color:#ffffff;}
 
- .btn-primary {border:1px solid #c75503;border-bottom:1px solid #9d4302;background-color:#ed1c24;background-repeat: repeat-x;background-image:-webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#ca5603));background-image:-webkit-linear-gradient(top, #ed1c24, #ca5603);background-image:-moz-linear-gradient(top, #ed1c24, #ca5603);background-image:-ms-linear-gradient(top, #e05f03, #ca5603);background-image:-o-linear-gradient(top, #e05f03, #ca5603);background-image:linear-gradient(top, #e05f03, #ca5603);filter: progid:dximagetransform.microsoft.gradient(startColorstr=#e05f03, endColorstr=#ca5603, GradientType=0);filter: progid:dximagetransform.microsoft.gradient(enabled=false);}
+ .btn-primary {border:1px solid #ed1c24;border-bottom:1px solid #9d4302;background-color:#ed1c24;background-repeat: repeat-x;background-image:-webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#ca5603));background-image:-webkit-linear-gradient(top, #ed1c24, #ca5603);background-image:-moz-linear-gradient(top, #ed1c24, #ca5603);background-image:-ms-linear-gradient(top, #ed1c24, #ca5603);background-image:-o-linear-gradient(top, #ed1c24, #ca5603);background-image:linear-gradient(top, #ed1c24, #ca5603);filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ed1c24, endColorstr=#ca5603, GradientType=0);filter: progid:dximagetransform.microsoft.gradient(enabled=false);}
 
- .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {background-color:#c75503;}
+ .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {background-color:#ed1c24;}
 
 #divHeaderText {padding: 0px 0px 20px; border-color: rgb(51, 51, 51); text-align: center;}
 
@@ -515,7 +515,7 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
   height: 100%;
 }
 .portfolio-area .single-portfolio-item .img-holder .overlay .tex-holder {
-  background: #e05f03 none repeat scroll 0 0;
+  background: #ed1c24 none repeat scroll 0 0;
   bottom: 0;
   height: 70px;
   padding-left: 10px;
@@ -567,3 +567,83 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
   color: #252525;
 }
 /* End Protfolio By Mehedi Mama and Saiful */
+
+
+/* Start team member area */
+.our-team{
+    text-align: center;
+}
+.our-team .pic{
+    position: relative;
+    overflow: hidden;
+}
+.our-team .pic img{
+    width: 100%;
+    height: auto;
+    transition: all 0.2s ease 0s;
+}
+.our-team:hover .pic img{
+    transform: translateY(15px);
+}
+.our-team .social_media_team{
+    width: 100%;
+    position: absolute;
+    bottom: -100%;
+    padding: 25px;
+    background-color:rgba(59, 204, 161, 0.9);
+    transition: all 0.35s ease 0s;
+}
+.our-team:hover .social_media_team{
+    bottom: 0px;
+}
+.our-team .description{
+    margin-top: 10px;
+    color: #fff;
+}
+.our-team .team_social{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    position: relative;
+    top:2%;
+}
+.our-team .team_social li{
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+.our-team .team_social li a{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    color:#fff;
+    font-size: 18px;
+    transition: all 1.3s ease 0s;
+}
+.our-team .team_social li a:hover{
+    background: #fff;
+    color:#424242;
+}
+.our-team .team-prof{
+    margin-top: 10px;
+}
+.our-team .post-title a{
+    text-transform: capitalize;
+    color:#424242;
+    transition: all 0.2s ease 0s;
+}
+.our-team .post-title a:hover{
+    text-decoration: none;
+    color:#3bcca1;
+}
+.our-team .post{
+    color:#3bcca1;
+    font-size: 18px;
+}
+@media screen and (max-width: 990px){
+    .our-team{
+        margin-bottom: 30px;
+    }
+}
+/* End team member area */
